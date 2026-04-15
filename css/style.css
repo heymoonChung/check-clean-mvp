@@ -95,9 +95,29 @@ body {
     }
     .demo-nav {
         top: 10px;
-        width: 90%;
-        justify-content: center;
-        flex-wrap: wrap;
+        width: 95%;
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        padding: 6px;
+        gap: 6px;
+        /* 스크롤바 숨김 (웹킷 기반) */
+        -ms-overflow-style: none; /* IE and Edge */
+        scrollbar-width: none; /* Firefox */
+    }
+    .demo-nav::-webkit-scrollbar {
+        display: none;
+    }
+    .demo-nav button {
+        padding: 6px 12px;
+        font-size: 0.75rem;
+        white-space: nowrap;
+    }
+    #screen1 header {
+        padding-top: 60px;
+    }
+    .report-header {
+        padding-top: 60px;
     }
 }
 
