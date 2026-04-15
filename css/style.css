@@ -1,14 +1,21 @@
 :root {
-    --primary: #4F46E5; /* Indigo 600 */
+    --primary: #4F46E5;
+    /* Indigo 600 */
     --primary-light: #818CF8;
     --primary-dark: #3730A3;
-    --accent: #10B981; /* Emerald 500 */
-    --accent-red: #EF4444; /* Red 500 */
-    --bg-color: #F3F4F6; /* Gray 100 */
+    --accent: #10B981;
+    /* Emerald 500 */
+    --accent-red: #EF4444;
+    /* Red 500 */
+    --bg-color: #F3F4F6;
+    /* Gray 100 */
     --app-bg: #FFFFFF;
-    --text-main: #111827; /* Gray 900 */
-    --text-muted: #6B7280; /* Gray 500 */
-    --border-color: #E5E7EB; /* Gray 200 */
+    --text-main: #111827;
+    /* Gray 900 */
+    --text-muted: #6B7280;
+    /* Gray 500 */
+    --border-color: #E5E7EB;
+    /* Gray 200 */
     --font-family: 'Inter', sans-serif;
     --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
     --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
@@ -47,7 +54,7 @@ body {
     gap: 10px;
     z-index: 1000;
     box-shadow: var(--shadow-lg);
-    border: 1px solid rgba(255,255,255,0.5);
+    border: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 .demo-nav button {
@@ -71,7 +78,8 @@ body {
 /* App Container (Mobile frame simulation) */
 #app-container {
     width: 390px;
-    height: 844px; /* iPhone 13 Pro dimensions */
+    height: 844px;
+    /* iPhone 13 Pro dimensions */
     max-width: 100vw;
     max-height: 100dvh;
     background: var(--app-bg);
@@ -87,12 +95,14 @@ body {
     body {
         align-items: flex-start;
     }
+
     #app-container {
         width: 100%;
         height: 100dvh;
         border-radius: 0;
         box-shadow: none;
     }
+
     .demo-nav {
         top: 10px;
         width: 95%;
@@ -102,20 +112,26 @@ body {
         padding: 6px;
         gap: 6px;
         /* 스크롤바 숨김 (웹킷 기반) */
-        -ms-overflow-style: none; /* IE and Edge */
-        scrollbar-width: none; /* Firefox */
+        -ms-overflow-style: none;
+        /* IE and Edge */
+        scrollbar-width: none;
+        /* Firefox */
     }
+
     .demo-nav::-webkit-scrollbar {
         display: none;
     }
+
     .demo-nav button {
         padding: 6px 12px;
         font-size: 0.75rem;
         white-space: nowrap;
     }
+
     #screen1 header {
-        padding-top: 90px;
+        padding-top: 90px !important;
     }
+
     .report-header {
         padding-top: 90px;
     }
@@ -268,8 +284,15 @@ body {
 }
 
 @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(10px); }
-    to { opacity: 1; transform: translateY(0); }
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .spinner {
@@ -283,7 +306,9 @@ body {
 }
 
 @keyframes spin {
-    to { transform: rotate(360deg); }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 .loading-state p {
@@ -334,10 +359,23 @@ body {
 }
 
 @keyframes scan {
-    0% { top: 0; opacity: 0; }
-    10% { opacity: 1; }
-    90% { opacity: 1; }
-    100% { top: 100%; opacity: 0; }
+    0% {
+        top: 0;
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    90% {
+        opacity: 1;
+    }
+
+    100% {
+        top: 100%;
+        opacity: 0;
+    }
 }
 
 .bounding-box {
@@ -391,9 +429,17 @@ body {
 }
 
 @keyframes pulseRed {
-    0% { box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.7); }
-    70% { box-shadow: 0 0 0 15px rgba(239, 68, 68, 0); }
-    100% { box-shadow: 0 0 0 0 rgba(239, 68, 68, 0); }
+    0% {
+        box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.7);
+    }
+
+    70% {
+        box-shadow: 0 0 0 15px rgba(239, 68, 68, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(239, 68, 68, 0);
+    }
 }
 
 .bottom-controls {
@@ -402,7 +448,7 @@ body {
     left: 0;
     width: 100%;
     padding: 24px;
-    background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
 }
 
 .status-msg {
@@ -413,7 +459,7 @@ body {
     display: flex;
     align-items: center;
     gap: 10px;
-    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .dot.live {
@@ -427,8 +473,15 @@ body {
 }
 
 @keyframes blink {
-    from { opacity: 1; transform: scale(1); }
-    to { opacity: 0.5; transform: scale(0.8); }
+    from {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    to {
+        opacity: 0.5;
+        transform: scale(0.8);
+    }
 }
 
 /* Screen 3: Report */
@@ -497,7 +550,7 @@ body {
     transform: rotate(-45deg);
 }
 
-.score-circle > * {
+.score-circle>* {
     transform: rotate(45deg);
 }
 
@@ -564,7 +617,7 @@ body {
 }
 
 .badge.gray {
-    background: rgba(0,0,0,0.6);
+    background: rgba(0, 0, 0, 0.6);
     color: white;
 }
 
@@ -639,7 +692,15 @@ body {
 }
 
 @keyframes shine {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.02); }
-    100% { transform: scale(1); }
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.02);
+    }
+
+    100% {
+        transform: scale(1);
+    }
 }
